@@ -1,10 +1,10 @@
 package com.mifu.controller;
 
 
-import com.mifu.model.domain.Hdfs;
-import com.mifu.service.HdfsService;
 import com.mifu.common.R;
 import com.mifu.common.ResultCode;
+import com.mifu.model.domain.Hdfs;
+import com.mifu.service.HdfsService;
 import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -38,6 +38,13 @@ public class HdfsController {
     }
 
     /*创建文件夹*/
+
+    /**
+     * 测试时需要不加跟路径
+     *
+     * @param filename
+     * @return
+     */
     @PostMapping("/mkdir")
     public R mkdirFile(@RequestParam String filename) {
         Boolean flag = hdfsService.mkdirFile(filename);
@@ -61,6 +68,14 @@ public class HdfsController {
     }
 
     /*上传文件*/
+
+    /**
+     * 测试时需要不加跟路径
+     *
+     * @param pathname
+     * @param file
+     * @return
+     */
     @PostMapping("/uploadFile")
     public R upload(@RequestParam String pathname, MultipartFile file) {
         try {

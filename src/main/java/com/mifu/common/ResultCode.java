@@ -5,7 +5,7 @@ package com.mifu.common;
  *
  * @Auther: mifu
  * @Date: 2022/07/03 16:59
- * @Description: 状态码
+ * @Description: 自定义状态码
  */
 
 public interface ResultCode {

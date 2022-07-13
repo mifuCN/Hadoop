@@ -35,7 +35,7 @@ public class SwaggerConfig {
     private ApiInfo webApiInfo() {
         return new ApiInfoBuilder()
                 .title("Hadoop网盘API文档")
-                .description("本文档描述了本次小学期期间所写的hadoop接口")
+                .description("本文档描述了本次小学期期间所写的用户登录接口以及hadoop接口")
                 .version("1.0")
                 .contact(new Contact("mifu", "https://www.201314.tk/", "1755786251@qq.com"))
                 .build();

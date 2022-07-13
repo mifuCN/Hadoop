@@ -10,6 +10,7 @@ import java.util.Map;
  * @Auther: mifu
  * @Date: 2022/07/03 17:02
  * @Description: 统一返回结果类 R
+ * 方便传给前端数据
  */
 @Data
 public class R {
