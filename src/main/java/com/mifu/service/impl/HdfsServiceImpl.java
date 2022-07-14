@@ -87,7 +87,7 @@ public class HdfsServiceImpl implements HdfsService {
             //通过FileSystem的静态方法获取文件系统客户端对象
             FileSystem fs = FileSystem.get(conf);
             //也可以通过如下的方式去指定文件系统的类型，并且同时设置用户身份
-            //FileSystem fs = FileSystem.get(new URI("hdfs://node1:9000"),conf,"mifu");
+            //FileSystem fs = FileSystem.get(new URI("hdfs:///192.168.10.102:8020"),conf,"mifu");
             if ("".equals(path)) {
                 path = "/";
                 fs.copyToLocalFile(false, new Path(path + filename1), new Path("D:\\MifuTest\\" + filename1), true); //下载到D盘

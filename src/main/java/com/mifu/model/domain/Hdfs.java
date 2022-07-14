@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * @Auther: mifu
+ * 定义了返回前端的字段
  * @Date: 2022/07/03 15:20
  * @Description: hdfs
  */

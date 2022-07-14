@@ -20,12 +20,12 @@ import java.util.List;
 @CrossOrigin
 public class HdfsController {
 
-    @Autowired
+    @Autowired //注入
     HdfsService hdfsService;
 
     /*获取Hadoop中所有的目录和文件*/
     @PostMapping("/findAll")
-    public R findAll(@RequestParam String path) {
+    public R findAll(@RequestParam String path) { //前端传入这个请求
         List<Hdfs> list = hdfsService.findAll(path);
         return R.ok().data("fileList", list);
     }

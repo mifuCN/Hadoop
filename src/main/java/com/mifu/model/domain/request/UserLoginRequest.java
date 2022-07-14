@@ -6,10 +6,11 @@ import java.io.Serializable;
 
 /**
  * 用户登录请求体
+ * 接收前端发送过来的登录数据
  *
  * @author mifuRD
  */
-@Data //引用lombok的Data注解 会自动生成get set方法
+@Data
 public class UserLoginRequest implements Serializable {
 
     private static final long serialVersionUID = -3196081511715116918L;

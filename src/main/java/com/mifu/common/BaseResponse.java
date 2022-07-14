@@ -7,7 +7,7 @@ import java.io.Serializable;
 /**
  * 通用返回类
  *
- * @param <T> 使用泛型  能够给各个方法通用的返回类型
+ * @param <T> 使用泛型  能够给各个方法通用的返回类型  传递给前端
  * @author mifuRD
  */
 @Data

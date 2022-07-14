@@ -6,6 +6,7 @@ import java.io.Serializable;
 
 /**
  * 用户注册请求体
+ * 接受前端发送过来的注册数据
  *
  * @author mifuRD
  */
